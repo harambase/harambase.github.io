@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Footer: React.FC = () => {
   return (
     <footer className="footer-bg footer-p pt-90"
-            style={{backgroundColor: '#fe3630', backgroundImage: 'url(/static/image/footer-bg.png)'}}>
+            style={{backgroundColor: '#2563eb', backgroundImage: 'url(/static/image/footer-bg.png)'}}>
       {/* Footer Top Heading */}
       <div className="footer-top-heiding">
         <div className="container">

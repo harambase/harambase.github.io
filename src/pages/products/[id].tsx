@@ -86,6 +86,38 @@ export default function ProductDetailPage() {
           </div>
         </section>
 
+        {/* Features Banner - Blue Banner */}
+        <div className="bg-blue-600 text-white p-6 mb-6" style={{backgroundColor: '#2563eb'}}>
+          <div className="container">
+            <div className="row text-center">
+              <div className="col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+                <div className="mb-2" style={{ fontSize: '32px' }}>🏠</div>
+                <div className="text-2xl font-bold mb-1">美观大方</div>
+              </div>
+              <div className="col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+                <div className="mb-2" style={{ fontSize: '32px' }}>🔧</div>
+                <div className="text-2xl font-bold mb-1">易于安装</div>
+              </div>
+              <div className="col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+                <div className="mb-2" style={{ fontSize: '32px' }}>☀️</div>
+                <div className="text-2xl font-bold mb-1">环境适应性强</div>
+              </div>
+              <div className="col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+                <div className="mb-2" style={{ fontSize: '32px' }}>⚖️</div>
+                <div className="text-2xl font-bold mb-1">轻量化设计</div>
+              </div>
+              <div className="col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+                <div className="mb-2" style={{ fontSize: '32px' }}>💎</div>
+                <div className="text-2xl font-bold mb-1">结构坚固稳定</div>
+              </div>
+              <div className="col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+                <div className="mb-2" style={{ fontSize: '32px' }}>💰</div>
+                <div className="text-2xl font-bold mb-1">节约成本</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <section className="pt-20 pb-120">
           <div className="container">
             <div className="row">
@@ -109,15 +141,6 @@ export default function ProductDetailPage() {
                   />
                 </div>
 
-                {/* Features */}
-                <div className="row mb-4">
-                  {features.map((feature, index) => (
-                    <div key={index} className="col-4 col-md-2 text-center mb-3">
-                      <div className="mb-2" style={{ fontSize: '32px' }}>{feature.icon}</div>
-                      <div style={{ fontSize: '13px' }}>{feature.text}</div>
-                    </div>
-                  ))}
-                </div>
               </div>
 
               {/* Right Column - Component Callouts */}
@@ -450,6 +473,38 @@ export default function ProductDetailPage() {
           </div>
         </section>
 
+        {/* Features Banner - Blue Banner */}
+        <div className="bg-blue-600 text-white p-6 mb-6" style={{backgroundColor: '#2563eb'}}>
+          <div className="container">
+            <div className="row text-center">
+              <div className="col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+                <div className="mb-2" style={{ fontSize: '32px' }}>🏠</div>
+                <div className="text-sm" style={{ opacity: 0.9 }}>美观大方</div>
+              </div>
+              <div className="col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+                <div className="mb-2" style={{ fontSize: '32px' }}>🔧</div>
+                <div className="text-sm" style={{ opacity: 0.9 }}>安装简便</div>
+              </div>
+              <div className="col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+                <div className="mb-2" style={{ fontSize: '32px' }}>☀️</div>
+                <div className="text-sm" style={{ opacity: 0.9 }}>环境适应性强</div>
+              </div>
+              <div className="col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+                <div className="mb-2" style={{ fontSize: '32px' }}>💡</div>
+                <div className="text-sm" style={{ opacity: 0.9 }}>轻量化设计</div>
+              </div>
+              <div className="col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+                <div className="mb-2" style={{ fontSize: '32px' }}>🛡️</div>
+                <div className="text-sm" style={{ opacity: 0.9 }}>结构坚固稳定</div>
+              </div>
+              <div className="col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+                <div className="mb-2" style={{ fontSize: '32px' }}>💰</div>
+                <div className="text-sm" style={{ opacity: 0.9 }}>节约成本</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <section className="pt-20 pb-120">
           <div className="container">
             <div className="row">
@@ -471,16 +526,6 @@ export default function ProductDetailPage() {
                     className="img-fluid w-100"
                     style={{ borderRadius: '8px' }}
                   />
-                </div>
-
-                {/* Features */}
-                <div className="row mb-4">
-                  {features.map((feature, index) => (
-                    <div key={index} className="col-4 col-md-2 text-center mb-3">
-                      <div className="mb-2" style={{ fontSize: '32px' }}>{feature.icon}</div>
-                      <div style={{ fontSize: '13px' }}>{feature.text}</div>
-                    </div>
-                  ))}
                 </div>
 
                 {/* Specifications Table */}

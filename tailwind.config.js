@@ -50,7 +50,7 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
         // Keep existing custom colors
-        'primary-custom': '#fe3630',
+        'primary-custom': '#2563eb',
         'secondary-custom': '#1a1a1a',
         'accent-custom': '#f8f9fa',
       },
