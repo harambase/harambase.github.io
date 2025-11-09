@@ -66,8 +66,15 @@ const Header: React.FC = () => {
             <div className="row align-items-center">
               <div className="col-xl-2 col-lg-2">
                 <div className="logo">
-                  <Link href="/">
-                    <Image src="/static/picture/f_logo.png" alt="logo" width={120} height={60}/>
+                  <Link href="/" style={{ textDecoration: 'none' }}>
+                    <span style={{ 
+                      fontSize: '28px', 
+                      fontWeight: 'bold', 
+                      color: '#dc3545',
+                      letterSpacing: '2px'
+                    }}>
+                      YXRH
+                    </span>
                   </Link>
                 </div>
               </div>
@@ -83,7 +90,7 @@ const Header: React.FC = () => {
                       <li className="has-sub">
                         <Link href="/products">产品</Link>
                       </li>
-                      <li><Link href="/compare">产品对比</Link></li>
+                      {/* <li><Link href="/compare">产品对比</Link></li> */}
                       <li><Link href="/contact">联系我们</Link></li>
                     </ul>
                   </nav>

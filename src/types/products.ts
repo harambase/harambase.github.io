@@ -33,8 +33,8 @@ export const PRODUCTS: Product[] = [
     id: 'p9',
     name: '光伏电站系统',
     category: 'Solar Frame',
-    image: '/static/picture/srg-01.jpg',
-    banner: '/static/picture/srg-01.jpg'
+    image: '/static/picture/powerplant.jpg',
+    banner: '/static/picture/powerplant.jpg'
   },
   {
     id: 'p10',

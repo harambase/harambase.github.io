@@ -118,8 +118,62 @@ export default function ProductDetailPage() {
                     </div>
                   ))}
                 </div>
+              </div>
 
-                {/* Specifications Table */}
+              {/* Right Column - Component Callouts */}
+              <div className="col-lg-5">
+                {/* Title */}
+                <div className="mb-4">
+                  <h2 className="text-danger d-inline-block px-4 py-2 mb-0" style={{backgroundColor: 'transparent'}}>
+                    主要组件
+                  </h2>
+                  <p className="text-muted mt-2">MAIN COMPONENTS</p>
+                </div>
+
+                {/* Components List */}
+                <div className="space-y-3">
+                  {components.map((component, index) => (
+                    <Card key={index} className="shadow-sm">
+                      <CardContent className="p-3">
+                        <div className="row align-items-center">
+                          <div className="col-4">
+                            <div 
+                              className="bg-light rounded d-flex align-items-center justify-content-center"
+                              style={{ height: '80px', border: '1px solid #e0e0e0' }}
+                            >
+                              <img 
+                                src={component.image} 
+                                alt={component.name}
+                                className="img-fluid"
+                                style={{ maxHeight: '100%', maxWidth: '100%', objectFit: 'contain' }}
+                                onError={(e) => {
+                                  const target = e.target as HTMLImageElement;
+                                  target.style.display = 'none';
+                                  if (target.parentElement) {
+                                    target.parentElement.innerHTML = '<div class="text-muted text-center" style="font-size: 12px;">图片</div>';
+                                  }
+                                }}
+                              />
+                            </div>
+                          </div>
+                          <div className="col-8">
+                            <div style={{ fontSize: '14px', fontWeight: '600', marginBottom: '4px' }}>
+                              {component.name}
+                            </div>
+                            <div style={{ fontSize: '12px', color: '#6c757d' }}>
+                              {component.nameEn}
+                            </div>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              {/* Specifications Table */}
+              <div className="col-lg-6">
                 <Card className="shadow-sm">
                   <CardContent className="p-4">
                     <h3 className="mb-3 fw-bold">技术项目 / Technical Project</h3>
@@ -179,55 +233,174 @@ export default function ProductDetailPage() {
                 </Card>
               </div>
 
-              {/* Right Column - Component Callouts */}
-              <div className="col-lg-5">
-                {/* Title */}
-                <div className="mb-4">
-                  <h2 className="text-danger d-inline-block px-4 py-2 mb-0" style={{backgroundColor: 'transparent'}}>
-                    主要组件
-                  </h2>
-                  <p className="text-muted mt-2">MAIN COMPONENTS</p>
-                </div>
-
-                {/* Components List */}
-                <div className="space-y-3">
-                  {components.map((component, index) => (
-                    <Card key={index} className="shadow-sm">
-                      <CardContent className="p-3">
-                        <div className="row align-items-center">
-                          <div className="col-4">
-                            <div 
-                              className="bg-light rounded d-flex align-items-center justify-content-center"
-                              style={{ height: '80px', border: '1px solid #e0e0e0' }}
-                            >
-                              <img 
-                                src={component.image} 
-                                alt={component.name}
-                                className="img-fluid"
-                                style={{ maxHeight: '100%', maxWidth: '100%', objectFit: 'contain' }}
-                                onError={(e) => {
-                                  const target = e.target as HTMLImageElement;
-                                  target.style.display = 'none';
-                                  if (target.parentElement) {
-                                    target.parentElement.innerHTML = '<div class="text-muted text-center" style="font-size: 12px;">图片</div>';
-                                  }
-                                }}
-                              />
-                            </div>
-                          </div>
-                          <div className="col-8">
-                            <div style={{ fontSize: '14px', fontWeight: '600', marginBottom: '4px' }}>
-                              {component.name}
-                            </div>
-                            <div style={{ fontSize: '12px', color: '#6c757d' }}>
-                              {component.nameEn}
-                            </div>
-                          </div>
+              {/* Installation Steps */}
+              <div className="col-lg-6">
+                <Card className="shadow-sm">
+                  <CardContent className="p-4">
+                    <h3 className="mb-3 fw-bold">安装步骤 / Installation Steps</h3>
+                    <div className="row g-3">
+                      {/* Step 1 */}
+                      <div className="col-6">
+                        <div className="mb-2">
+                          <img 
+                            src="/static/picture/installation/step1.jpg" 
+                            alt="Step 1"
+                            className="img-fluid w-100"
+                            style={{ height: '120px', objectFit: 'cover', borderRadius: '4px' }}
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.style.display = 'none';
+                            }}
+                          />
                         </div>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
+                        <div style={{ fontSize: '12px', lineHeight: '1.5' }}>
+                          <strong>步骤 1</strong><br/>
+                          根据图纸,用自攻螺丝将梯形瓦具与屋面固定
+                        </div>
+                      </div>
+
+                      {/* Step 2 */}
+                      <div className="col-6">
+                        <div className="mb-2">
+                          <img 
+                            src="/static/picture/installation/step2.jpg" 
+                            alt="Step 2"
+                            className="img-fluid w-100"
+                            style={{ height: '120px', objectFit: 'cover', borderRadius: '4px' }}
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.style.display = 'none';
+                            }}
+                          />
+                        </div>
+                        <div style={{ fontSize: '12px', lineHeight: '1.5' }}>
+                          <strong>步骤 2</strong><br/>
+                          用同样的方法安装其他夹具
+                        </div>
+                      </div>
+
+                      {/* Step 3 */}
+                      <div className="col-6">
+                        <div className="mb-2">
+                          <img 
+                            src="/static/picture/installation/step3.jpg" 
+                            alt="Step 3"
+                            className="img-fluid w-100"
+                            style={{ height: '120px', objectFit: 'cover', borderRadius: '4px' }}
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.style.display = 'none';
+                            }}
+                          />
+                        </div>
+                        <div style={{ fontSize: '12px', lineHeight: '1.5' }}>
+                          <strong>步骤 3</strong><br/>
+                          将导轨安装在夹具上,并用T型螺丝固定
+                        </div>
+                      </div>
+
+                      {/* Step 4 */}
+                      <div className="col-6">
+                        <div className="mb-2">
+                          <img 
+                            src="/static/picture/installation/step4.jpg" 
+                            alt="Step 4"
+                            className="img-fluid w-100"
+                            style={{ height: '120px', objectFit: 'cover', borderRadius: '4px' }}
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.style.display = 'none';
+                            }}
+                          />
+                        </div>
+                        <div style={{ fontSize: '12px', lineHeight: '1.5' }}>
+                          <strong>步骤 4</strong><br/>
+                          用导轨连接件将导轨连接
+                        </div>
+                      </div>
+
+                      {/* Step 5 */}
+                      <div className="col-6">
+                        <div className="mb-2">
+                          <img 
+                            src="/static/picture/installation/step5.jpg" 
+                            alt="Step 5"
+                            className="img-fluid w-100"
+                            style={{ height: '120px', objectFit: 'cover', borderRadius: '4px' }}
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.style.display = 'none';
+                            }}
+                          />
+                        </div>
+                        <div style={{ fontSize: '12px', lineHeight: '1.5' }}>
+                          <strong>步骤 5</strong><br/>
+                          按照同样的方法安装其它导轨
+                        </div>
+                      </div>
+
+                      {/* Step 6 */}
+                      <div className="col-6">
+                        <div className="mb-2">
+                          <img 
+                            src="/static/picture/installation/step6.jpg" 
+                            alt="Step 6"
+                            className="img-fluid w-100"
+                            style={{ height: '120px', objectFit: 'cover', borderRadius: '4px' }}
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.style.display = 'none';
+                            }}
+                          />
+                        </div>
+                        <div style={{ fontSize: '12px', lineHeight: '1.5' }}>
+                          <strong>步骤 6</strong><br/>
+                          安装组件,用中压将组件与导轨固定
+                        </div>
+                      </div>
+
+                      {/* Step 7 */}
+                      <div className="col-6">
+                        <div className="mb-2">
+                          <img 
+                            src="/static/picture/installation/step7.jpg" 
+                            alt="Step 7"
+                            className="img-fluid w-100"
+                            style={{ height: '120px', objectFit: 'cover', borderRadius: '4px' }}
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.style.display = 'none';
+                            }}
+                          />
+                        </div>
+                        <div style={{ fontSize: '12px', lineHeight: '1.5' }}>
+                          <strong>步骤 7</strong><br/>
+                          安装组件,用侧压将组件与导轨固定
+                        </div>
+                      </div>
+
+                      {/* Step 8 */}
+                      <div className="col-6">
+                        <div className="mb-2">
+                          <img 
+                            src="/static/picture/installation/step8.jpg" 
+                            alt="Step 8"
+                            className="img-fluid w-100"
+                            style={{ height: '120px', objectFit: 'cover', borderRadius: '4px' }}
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.style.display = 'none';
+                            }}
+                          />
+                        </div>
+                        <div style={{ fontSize: '12px', lineHeight: '1.5' }}>
+                          <strong>步骤 8</strong><br/>
+                          安装完成
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </div>

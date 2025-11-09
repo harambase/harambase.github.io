@@ -10,7 +10,14 @@ export default function ProductsPage() {
   const [selectedProducts, setSelectedProducts] = useState<Set<string>>(new Set());
 
   const filtered = useMemo(() => {
-    let items = PRODUCTS.filter(p => (category === ALL || p.category === category));
+    // Filter out individual solar panels (p15-p19) from display, but keep p14 (main entrance)
+    let items = PRODUCTS.filter(p => {
+      // Exclude individual solar panels from the listing
+      if (p.category === '光伏板' && p.id !== 'p14') {
+        return false;
+      }
+      return category === ALL || p.category === category;
+    });
     if (query.trim()) {
       const q = query.trim().toLowerCase();
       items = items.filter(p => p.name.toLowerCase().includes(q));
@@ -83,22 +90,6 @@ export default function ProductsPage() {
                   </div>
                   <div className="services-content-05 flex-grow">
                     <h4 className="mb-10">{p.name}</h4>
-                    <div style={{display: 'flex', alignItems: 'center', marginBottom: 2}}>
-                      <span
-                        style={{
-                          background: '#fe3630',
-                          color: '#fff',
-                          borderRadius: '12px',
-                          padding: '2px 12px',
-                          fontSize: '14px',
-                          fontWeight: 500,
-                          marginRight: 'auto',
-                          display: 'inline-block'
-                        }}
-                      >
-                        {p.category}
-                      </span>
-                    </div>
                     <div className="mb-10">
                       <small className="text-muted d-block">安装地点: 地面/屋面</small>
                       <small className="text-muted d-block">主要材质: 热镀锌钢材</small>

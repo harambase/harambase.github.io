@@ -141,7 +141,14 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <div className="col-lg-4 text-center">
-              <img src="/static/picture/f_logo.png" alt="logo" width={120} height={60}/>
+              <span style={{ 
+                fontSize: '28px', 
+                fontWeight: 'bold', 
+                color: '#ffffff',
+                letterSpacing: '2px'
+              }}>
+                YXRH
+              </span>
             </div>
             <div className="col-lg-4 text-right">
               <div className="footer-social">
