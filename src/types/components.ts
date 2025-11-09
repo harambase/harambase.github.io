@@ -20,7 +20,7 @@ export const COMPONENTS: Component[] = [
     materialEn: 'AL6005-T5',
     surfaceTreatment: '阳极氧化',
     surfaceTreatmentEn: 'anodic oxidation',
-    image3d: '/static/picture/component/cdc007.png',
+    image3d: '/static/picture/component/CDC007.png',
   },
   {
     id: 'c2',
@@ -31,7 +31,7 @@ export const COMPONENTS: Component[] = [
     materialEn: 'AL6005-T5',
     surfaceTreatment: '阳极氧化',
     surfaceTreatmentEn: 'anodic oxidation',
-    image3d: '/static/picture/component/cdc008.png',
+    image3d: '/static/picture/component/CDC008.png',
   },
   {
     id: 'c3',
@@ -42,7 +42,7 @@ export const COMPONENTS: Component[] = [
     materialEn: 'Q235B',
     surfaceTreatment: '热镀锌',
     surfaceTreatmentEn: 'hot dip galvanizing',
-    image3d: '/static/picture/component/cdf001.png',
+    image3d: '/static/picture/component/CDF001.png',
   },
   {
     id: 'c4',
@@ -53,7 +53,7 @@ export const COMPONENTS: Component[] = [
     materialEn: 'Q235B',
     surfaceTreatment: '热镀锌',
     surfaceTreatmentEn: 'hot dip galvanizing',
-    image3d: '/static/picture/component/cdf002.png',
+    image3d: '/static/picture/component/CDF002.png',
 
   },
   {
@@ -65,7 +65,7 @@ export const COMPONENTS: Component[] = [
     materialEn: 'Q235B',
     surfaceTreatment: '热镀锌',
     surfaceTreatmentEn: 'hot dip galvanizing',
-    image3d: '/static/picture/component/cdf003.png',
+    image3d: '/static/picture/component/CDF003.png',
   },
 ];
 
