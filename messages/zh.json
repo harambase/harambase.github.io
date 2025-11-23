@@ -1,0 +1,137 @@
+{
+  "Navigation": {
+    "home": "首页",
+    "about": "关于我们",
+    "products": "产品中心",
+    "contact": "联系我们",
+    "compare": "产品对比"
+  },
+  "Common": {
+    "learnMore": "了解更多",
+    "getInTouch": "联系我们",
+    "viewAllProducts": "查看所有产品",
+    "downloadDatasheet": "下载数据表",
+    "share": "分享",
+    "backToProducts": "返回产品列表"
+  },
+  "Home": {
+    "heroTitle": "以先进的光伏技术驱动可持续未来",
+    "heroSubtitle": "我们制造具有行业领先效率和耐用性的优质太阳能电池板。今天就加入能源革命。",
+    "newSeries": "全新高效系列现已上市",
+    "exploreProducts": "探索产品",
+    "featuredSolutions": "精选解决方案",
+    "featuredSubtitle": "探索我们全面的太阳能解决方案和结构组件系列。",
+    "readyToSwitch": "准备好切换到太阳能了吗？",
+    "contactTeam": "联系我们的团队获取定制报价或查找附近的经销商。",
+    "features": {
+      "efficiency": {
+        "title": "高效能",
+        "desc": "行业领先的转换率，实现每平方英尺最大的发电量。"
+      },
+      "warranty": {
+        "title": "25年质保",
+        "desc": "全面的质保服务，确保持久的性能和耐用性。"
+      },
+      "eco": {
+        "title": "绿色环保",
+        "desc": "采用可持续工艺和可回收材料制造。"
+      },
+      "quality": {
+        "title": "品质认证",
+        "desc": "符合严格的国际安全和性能标准。"
+      }
+    },
+    "solutions": {
+        "solar": {
+            "title": "光伏组件",
+            "desc": "高性能单晶和双面电池板",
+            "features": [
+                "最高23.3%转换效率",
+                "N型TOPCon技术",
+                "可靠的功率输出"
+            ]
+        },
+        "frames": {
+            "title": "电站支架",
+            "desc": "坚固的地面和屋顶安装系统",
+            "features": [
+                "地面光伏支架系统",
+                "工商业屋顶支架",
+                "光伏车棚结构"
+            ]
+        },
+        "parts": {
+            "title": "安装配件",
+            "desc": "确保安装安全的关键配件",
+            "features": [
+                "铝合金导轨",
+                "不锈钢紧固件",
+                "可调节压块"
+            ]
+        },
+        "steel": {
+            "title": "钢铁产品",
+            "desc": "用于建筑的工业级钢板",
+            "features": [
+                "碳素结构钢板",
+                "低合金高强度钢",
+                "耐热钢板"
+            ]
+        }
+    }
+  },
+  "Product": {
+    "title": "产品中心",
+    "subtitle": "探索我们全面的光伏组件、支架系统和钢铁产品系列。",
+    "categories": {
+      "solarModules": "光伏组件",
+      "steelProducts": "钢铁产品",
+      "stationFrames": "电站支架",
+      "mountingParts": "安装配件"
+    },
+    "filters": {
+        "title": "筛选",
+        "clear": "清除筛选"
+    },
+    "details": {
+        "powerOutput": "功率输出",
+        "dimensions": "尺寸",
+        "performanceCurves": "性能曲线",
+        "electricalParamsSTC": "电性能参数 (STC)",
+        "electricalParamsBNPI": "电性能参数 (BNPI)",
+        "mechanicalSpecs": "机械规格",
+        "tempCoefficients": "温度系数",
+        "operatingParams": "工作参数",
+        "testConditions": "测试条件: 1000/800/600 W/m²",
+        "stcCondition": "STC: 辐照度 1000W/m², 电池温度 25°C, AM1.5",
+        "bnpiCondition": "BNPI: 背面辐照度 135W/m²"
+    }
+  },
+   "About": {
+    "title": "关于我们",
+    "mission": "我们的使命",
+    "missionText": "通过创新和卓越制造，加速世界向可持续能源的转型。",
+    "stats": {
+        "years": "年行业经验",
+        "capacity": "年产能",
+        "countries": "服务国家",
+        "employees": "员工数量"
+    }
+  },
+  "Contact": {
+    "title": "联系我们",
+    "subtitle": "如有咨询、支持或合作机会，请与我们的团队联系。",
+    "form": {
+        "name": "姓名",
+        "email": "电子邮箱",
+        "subject": "主题",
+        "message": "留言内容",
+        "send": "发送信息"
+    },
+    "info": {
+        "address": "地址",
+        "phone": "电话",
+        "email": "电子邮箱"
+    }
+  }
+}

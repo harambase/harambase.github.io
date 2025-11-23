@@ -1,0 +1,137 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "contact": "Contact Us",
+    "compare": "Compare"
+  },
+  "Common": {
+    "learnMore": "Learn More",
+    "getInTouch": "Get in Touch",
+    "viewAllProducts": "View All Products",
+    "downloadDatasheet": "Download Datasheet",
+    "share": "Share",
+    "backToProducts": "Back to Products"
+  },
+  "Home": {
+    "heroTitle": "Powering a Sustainable Future with Advanced Solar Technology",
+    "heroSubtitle": "We manufacture premium solar panels that deliver industry-leading efficiency and durability. Join the energy revolution today.",
+    "newSeries": "New High-Efficiency Series Available",
+    "exploreProducts": "Explore Products",
+    "featuredSolutions": "Featured Solutions",
+    "featuredSubtitle": "Discover our comprehensive range of solar energy solutions and structural components.",
+    "readyToSwitch": "Ready to Switch to Solar?",
+    "contactTeam": "Contact our team for a custom quote or to find a distributor near you.",
+    "features": {
+      "efficiency": {
+        "title": "High Efficiency",
+        "desc": "Industry-leading conversion rates for maximum power generation per square foot."
+      },
+      "warranty": {
+        "title": "25-Year Warranty",
+        "desc": "Guaranteed performance and durability backed by our comprehensive warranty."
+      },
+      "eco": {
+        "title": "Eco-Friendly",
+        "desc": "Manufactured with sustainable practices and recyclable materials."
+      },
+      "quality": {
+        "title": "Certified Quality",
+        "desc": "Meeting rigorous international standards for safety and performance."
+      }
+    },
+    "solutions": {
+        "solar": {
+            "title": "Solar Modules",
+            "desc": "High-performance Monocrystalline & Bifacial panels",
+            "features": [
+                "Up to 23.3% Efficiency",
+                "N-type TOPCon Technology",
+                "Reliable Power Output"
+            ]
+        },
+        "frames": {
+            "title": "Station Frames",
+            "desc": "Robust mounting systems for ground & roof",
+            "features": [
+                "Ground Mounting Systems",
+                "Commercial Roof Mounts",
+                "Solar Carport Structures"
+            ]
+        },
+        "parts": {
+            "title": "Mounting Parts",
+            "desc": "Essential accessories for secure installation",
+            "features": [
+                "Aluminum Guide Rails",
+                "Stainless Steel Fasteners",
+                "Adjustable Clamps"
+            ]
+        },
+        "steel": {
+            "title": "Steel Products",
+            "desc": "Industrial grade steel plates for construction",
+            "features": [
+                "Carbon Steel Plates",
+                "Low Alloy High Strength",
+                "Heat Resistant Steel"
+            ]
+        }
+    }
+  },
+  "Product": {
+    "title": "Our Products",
+    "subtitle": "Explore our comprehensive range of solar modules, mounting systems, and steel products.",
+    "categories": {
+      "solarModules": "Solar Modules",
+      "steelProducts": "Steel Products",
+      "stationFrames": "Station Frames",
+      "mountingParts": "Mounting Accessories"
+    },
+    "filters": {
+        "title": "Filters",
+        "clear": "Clear Filters"
+    },
+    "details": {
+        "powerOutput": "Power Output",
+        "dimensions": "Dimensions",
+        "performanceCurves": "Performance Curves",
+        "electricalParamsSTC": "Electrical Parameters (STC)",
+        "electricalParamsBNPI": "Electrical Parameters (BNPI)",
+        "mechanicalSpecs": "Mechanical Specifications",
+        "tempCoefficients": "Temperature Coefficients",
+        "operatingParams": "Operating Parameters",
+        "testConditions": "Test Conditions: 1000/800/600 W/m²",
+        "stcCondition": "STC: Irradiance 1000W/m², Cell Temp 25°C, AM1.5",
+        "bnpiCondition": "BNPI: Rear Irradiance 135W/m²"
+    }
+  },
+   "About": {
+    "title": "About Us",
+    "mission": "Our Mission",
+    "missionText": "To accelerate the world's transition to sustainable energy through innovation and manufacturing excellence.",
+    "stats": {
+        "years": "Years Experience",
+        "capacity": "Annual Capacity",
+        "countries": "Countries Served",
+        "employees": "Employees"
+    }
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team for inquiries, support, or partnership opportunities.",
+    "form": {
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "Send Message"
+    },
+    "info": {
+        "address": "Address",
+        "phone": "Phone",
+        "email": "Email"
+    }
+  }
+}
